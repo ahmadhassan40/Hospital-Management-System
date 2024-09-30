@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILE</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: url(File.jpg);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 5% auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            padding-right: 20px;
+        }
+
+        label {
+            color: #555;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: lightseagreen;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            background-color: lightseagreen;
+        }
+
+        h1{
+            background-color: lightseagreen;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-left: 8px;
+            margin-right: 8px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1">FILE SHEET</h1>
+    <div class="container">
+        <h2>FILE</h2>
+        <form action="File.php" method="post">
+            <div class="form-group">
+                <label for="Patient_SSN">Patient SSN:</label>
+                <input type="text" id="Patient_SSN" name="Patient_SSN" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Doctor_ID">Doctor ID:</label>
+                <input type="text" id="Doctor_ID" name="Doctor_ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Patient_Report_ID">Patient Report ID:</label>
+                <input type="text" id="Patient_Report_ID" name="Patient_Report_ID" required>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
